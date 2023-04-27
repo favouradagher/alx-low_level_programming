@@ -1,4 +1,13 @@
+#include "main.h"
 #include <stdlib.h>
+
+/**
+ * array_range - Allocates memory for an array using malloc and sets the memory to 0
+ * @min: Number of elements in the array
+ * @max: Size of each element in bytes
+ *
+ * Return: Pointer to the allocated memory, or NULL if nmemb or size is 0 or if malloc fails
+ */
 
 int *array_range(int min, int max)
 {
