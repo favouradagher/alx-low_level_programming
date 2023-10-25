@@ -1,4 +1,10 @@
 CC = gcc
 SRC = main.c holberton.c
-all: $(SRC)
+
+all: holberton
+
+holberton: main.o holberton.o
 	$(CC) $(SRC) -o holberton
+clean:
+	rm *.o holberton
+
